@@ -242,3 +242,98 @@ Info:            8106 KBytes free for stack + heap.
 Info: Creating lab2.objdump
 nios2-elf-objdump --disassemble --syms --all-header --source lab2.elf >lab2.objdump
 [lab2 build complete]
+14:44:28 **** Incremental Build of configuration Nios II for project lab2 ****
+make all 
+Info: Building ../lab2_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab2_bsp//HAL/inc -I../lab2_bsp/ -I../lab2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'button_press_isr':
+hello_world.c:12:2: warning: implicit declaration of function 'IOWA_ALTERA_AVALON_PIO_EDGE_CAP' [-Wimplicit-function-declaration]
+  IOWA_ALTERA_AVALON_PIO_EDGE_CAP(KEYS_BASE, 0);
+  ^
+hello_world.c: In function 'main':
+hello_world.c:21:2: warning: implicit declaration of function 'IOWR_ALTERA_AVOLN_PIO_EDGE_CAP' [-Wimplicit-function-declaration]
+  IOWR_ALTERA_AVOLN_PIO_EDGE_CAP(KEYS_BASE,0);
+  ^
+hello_world.c:25:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(KEY_IRQ,context_going_to_be_passed, button_interupts_function);
+  ^
+hello_world.c:25:19: error: 'KEY_IRQ' undeclared (first use in this function)
+  alt_irq_register(KEY_IRQ,context_going_to_be_passed, button_interupts_function);
+                   ^
+hello_world.c:25:19: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:25:55: error: 'button_interupts_function' undeclared (first use in this function)
+  alt_irq_register(KEY_IRQ,context_going_to_be_passed, button_interupts_function);
+                                                       ^
+make: *** [obj/default/hello_world.o] Error 1
+14:45:08 **** Incremental Build of configuration Nios II for project lab2 ****
+make all 
+Info: Building ../lab2_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab2_bsp//HAL/inc -I../lab2_bsp/ -I../lab2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'button_press_isr':
+hello_world.c:12:2: warning: implicit declaration of function 'IOWA_ALTERA_AVALON_PIO_EDGE_CAP' [-Wimplicit-function-declaration]
+  IOWA_ALTERA_AVALON_PIO_EDGE_CAP(KEYS_BASE, 0);
+  ^
+hello_world.c: In function 'main':
+hello_world.c:21:2: warning: implicit declaration of function 'IOWR_ALTERA_AVOLN_PIO_EDGE_CAP' [-Wimplicit-function-declaration]
+  IOWR_ALTERA_AVOLN_PIO_EDGE_CAP(KEYS_BASE,0);
+  ^
+hello_world.c:25:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(KEY_IRQ,context_going_to_be_passed,button_interupts_function);
+  ^
+hello_world.c:25:19: error: 'KEY_IRQ' undeclared (first use in this function)
+  alt_irq_register(KEY_IRQ,context_going_to_be_passed,button_interupts_function);
+                   ^
+hello_world.c:25:19: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:25:54: error: 'button_interupts_function' undeclared (first use in this function)
+  alt_irq_register(KEY_IRQ,context_going_to_be_passed,button_interupts_function);
+                                                      ^
+make: *** [obj/default/hello_world.o] Error 1
+14:45:33 **** Incremental Build of configuration Nios II for project lab2 ****
+make all 
+Info: Building ../lab2_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab2_bsp//HAL/inc -I../lab2_bsp/ -I../lab2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'button_press_isr':
+hello_world.c:12:2: warning: implicit declaration of function 'IOWA_ALTERA_AVALON_PIO_EDGE_CAP' [-Wimplicit-function-declaration]
+  IOWA_ALTERA_AVALON_PIO_EDGE_CAP(KEYS_BASE, 0);
+  ^
+hello_world.c: In function 'main':
+hello_world.c:25:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(KEY_IRQ,context_going_to_be_passed,button_interupts_function);
+  ^
+hello_world.c:25:19: error: 'KEY_IRQ' undeclared (first use in this function)
+  alt_irq_register(KEY_IRQ,context_going_to_be_passed,button_interupts_function);
+                   ^
+hello_world.c:25:19: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:25:54: error: 'button_interupts_function' undeclared (first use in this function)
+  alt_irq_register(KEY_IRQ,context_going_to_be_passed,button_interupts_function);
+                                                      ^
+make: *** [obj/default/hello_world.o] Error 1
+14:46:40 **** Incremental Build of configuration Nios II for project lab2 ****
+make all 
+Info: Building ../lab2_bsp/
+C:/intelFPGA/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab2_bsp//HAL/inc -I../lab2_bsp/ -I../lab2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'button_press_isr':
+hello_world.c:12:2: warning: implicit declaration of function 'IOWA_ALTERA_AVALON_PIO_EDGE_CAP' [-Wimplicit-function-declaration]
+  IOWA_ALTERA_AVALON_PIO_EDGE_CAP(KEYS_BASE, 0);
+  ^
+hello_world.c: In function 'main':
+hello_world.c:25:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(KEYS_IRQ,context_going_to_be_passed,button_interupts_function);
+  ^
+hello_world.c:25:55: error: 'button_interupts_function' undeclared (first use in this function)
+  alt_irq_register(KEYS_IRQ,context_going_to_be_passed,button_interupts_function);
+                                                       ^
+hello_world.c:25:55: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [obj/default/hello_world.o] Error 1
